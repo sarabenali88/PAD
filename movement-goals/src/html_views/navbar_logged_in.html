@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light static-top border-bottom py-2">
+    <div class="container">
+        <a class="navbar-brand" data-controller="home" href="#">
+            Home
+<!--            <img src="../assets/img/Screenshot_7.png" alt="" class="d-inline-block align-text-top navbar-brand-img" style="max-height: 80px;">-->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                <li class="nav-item">
+                    <a id="dashboard-nav-btn" class="nav-link" data-controller="dashboard" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a id="goals-nav-btn" class="nav-link" data-controller="goals" href="#">Doelen</a>
+                </li>
+                <li class="nav-item">
+                    <a id="calendar-nav-btn" class="nav-link" data-controller="calendar" href="#">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a id="activities-nav-btn" class="nav-link" data-controller="activities" href="#">Activiteiten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-controller="recommendation" href="#">Aanbevelingen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-controller="question" href="#">Intake</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link logout-nav-link" data-controller="logout" href="#">Uitloggen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

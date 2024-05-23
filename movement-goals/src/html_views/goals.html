@@ -1,0 +1,84 @@
+<div class="goals-content d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center pt-3 pb-3" style="height: 75vh">
+        <div class="row shadow rounded-3 justify-content-center align-items-center p-3">
+
+            <!--Title and title description-->
+            <div class="header-title text-center" style="height: 100px">
+                <h1 class="fw-bold text-primary">Doelen</h1>
+                <p id="title-description" class="lead">
+                    Vul voor elke activiteit in hoeveel tijd u eraan
+                    wil besteden </p>
+            </div>
+            <div style="height: 450px; overflow-y: scroll;">
+                <form class="row d-flex justify-content-center align-items-center needs-validation"
+                      style="height: calc(100% - 15px);"
+                      id="form" novalidate>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td class="fw-bold text-primary text-center">
+                                <h5>Activiteiten</h5>
+                            </td>
+                            <td class="fw-bold text-primary text-center">
+                                <h5>Dagen per week</h5>
+                            </td>
+                            <td class="fw-bold text-primary text-center">
+                                <h5 style="width: 200%;">Tijd per dag</h5>
+                            </td>
+                        </tr>
+                        </thead>
+                        <tbody id="goalsInput">
+                        </tbody>
+                    </table>
+
+                    <!-- Submit button -->
+                    <div id="button" class="row justify-content-center align-items-center align-self-end mt-4 mb-3">
+                        <div id="button-container" class="row gap-3 justify-content-center align-items-center w-50">
+                            <button type="submit"
+                                    class="intake-btn col-4 next-btn btn btn-primary mt-auto justify-content-center gap-2">
+                                Doelen opslaan
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--View-->
+<template id="activityTemplate">
+    <tr>
+        <td class="p-4 d-flex justify-content-center align-content-between">
+            <input id="activities" type="text" class="open-input form-control w-50" disabled>
+        </td>
+
+        <td>
+            <div class="d-flex justify-content-center">
+                <input id="daysPer" type="text" class="open-input form-control text-center w-50" placeholder="0">
+            </div>
+        </td>
+        <td>
+            <div class="d-flex align-items-center justify-content-center gap-3">
+                <input type="text" id="hoursPer" class="time-per-select form-control text-center w-50"
+                       placeholder="0">
+                <label id="hours">uur</label>
+            </div>
+        </td>
+        <td>
+            <div class="d-flex align-items-center justify-content-center gap-3">
+                <input type="text" id="minPer" class="time-per-select form-control text-center w-50"
+                       placeholder="0">
+                <label id="minutes">min</label>
+            </div>
+        </td>
+    </tr>
+</template>
+
+
+<!--Error-->
+<template id="error">
+    <div class="alert alert-danger text-center w-100" role="alert"></div>
+</template>

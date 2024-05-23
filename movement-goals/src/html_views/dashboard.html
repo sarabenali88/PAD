@@ -1,0 +1,36 @@
+<div class="dashboard-content d-flex justify-content-center">
+  <div class="container d-flex justify-content-center pt-5 pb-5">
+    <div class="row shadow rounded-3 justify-content-center p-3">
+      <h1 class="fw-bolder text-center text-primary">Dashboard</h1>
+      <!--Popup-->
+      <div class="popup text-center p-3" id="popup">
+        <h2 class="text-primary">Update uw doel!</h2>
+        <p>Heeft u vandaag aan uw doel gewerkt?</p>
+        <button class="m-2 btn btn-outline-primary ja" type="button">Ja</button>
+        <button class="m-2 btn btn-outline-danger nee" type="button">Nee</button>
+        <button class="m-2 btn btn-outline-danger verwijder" type="button">Doel verwijderen</button>
+      </div>
+
+      <div class="m-3 text-center cook">
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<template class="goal">
+    <div class="bg-light m-3 extra-round">
+      <div class="d-flex justify-content-between">
+        <h5 class="m-4 text-primary titel"></h5>
+        <button class="m-3 btn btn-update btn-outline-primary">Update doel</button>
+      </div>
+      <p class="text-primary progress-text"></p>
+      <div class="progress">
+        <div style="width: 0%; height: 20px" class="bg-danger text-center progress-bar mb-2 p-3 w-0" role="progressbar" aria-valuenow="0"
+             aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+</template>
+

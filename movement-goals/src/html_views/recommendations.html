@@ -1,0 +1,77 @@
+<div class="bg-recommendations">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 mt-5">
+                <h1 class="text-center fs-1 text-white mt-4 fw-bolder mb-1">Aanbevelingen</h1>
+            </div>
+            <p class="mb-3 text-center mt-1 mb-1 text-white">Kies hieronder maximaal 3 thema's waaraan je de komende tijd wilt gaan werken</p>
+
+            <div class="row justify-content-center mb-3">
+                <div id="target" class="card m-3 box justify-content-center extra-round border-0 text-primary" style="width: 12rem; height: 12rem;">
+
+                </div>
+                <div class="card m-3 box justify-content-center extra-round border-0 text-primary" style="width: 12rem; height: 12rem;">
+
+                </div>
+                <div class="card box m-3 justify-content-center extra-round border-0 text-primary" style="width: 12rem; height: 12rem;">
+
+                </div>
+            </div>
+
+            <div class="checkable-cards-container row justify-content-center mt-4 mb-5">
+                <div class="card m-3 border-0 extra-round h-100" style="width: 18rem;">
+                    <div class="card-body text-center align-items-center justify-content-center d-flex flex-column">
+                        <div id="muscle">
+                            <i draggable="true" id="icon1" class="fa-solid fa-dumbbell icon fa-7x p-3 justify-content-center text-primary"></i>
+                        </div>
+                        <h4 class="card-title mt-3 fw-bolder on-surface">Spierkracht</h4>
+                        <p class="card-text on-surface-variant">Spierkracht bevat activiteiten die betrokken zijn met het verbeteren van uw spierkracht.<br><br>
+                                            Bijvoorbeeld: zwemmen of fitness.</p>
+                        <div class="checkbox-container gap-2 d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkMuscle">
+                            <label class="form-check-label on-surface" for="checkMuscle">
+                                Spierkracht Selecteren
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 m-3 extra-round h-100" style="width: 18rem;">
+                    <div class="card-body text-center align-items-center justify-content-center d-flex flex-column">
+                        <div id="bone">
+                            <i draggable="true" id="icon2" class="fa-solid fa-bone icon fa-7x p-3 justify-content-center text-primary"></i>
+                        </div>
+                        <h4 class="card-title mt-3 fw-bolder on-surface">Bot</h4>
+                        <p class="card-text on-surface-variant">Bot bevat activiteiten die betrokken zijn met het verbeteren van uw botten.<br><br>
+                                             Bijvoorbeeld: wandelen of gymnastiek.</p>
+                        <div class="checkbox-container gap-2 d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkBone">
+                            <label class="form-check-label on-surface" for="checkBone">
+                                Bot Selecteren
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 m-3 extra-round h-100" style="width: 18rem;">
+                    <div class="card-body text-center align-items-center justify-content-center d-flex flex-column">
+                        <div id="balance">
+                            <i draggable="true" id="icon3" class="fa-solid fa-scale-balanced icon fa-7x p-3 justify-content-center text-primary"></i>
+                        </div>
+                        <h4 class="card-title mt-3 fw-bolder on-surface">Balans</h4>
+                        <p class="card-text on-surface-variant">Balans bevat activiteiten die betrokken zijn met bot en spierkracht samen.<br><br>
+                                             Bijvoorbeeld: badminton of basketbal.</p>
+                        <div class="checkbox-container gap-2 d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkBalance">
+                            <label class="form-check-label on-surface" for="checkBalance">
+                                Balans Selecteren
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="error mb-5 text-danger text-center"></div>
+
+            <button type="button" class="col-3 btn btn-primary mb-5">Aanbevelingen Opslaan</button>
+        </div>
+    </div>
+</div>

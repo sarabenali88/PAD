@@ -1,0 +1,11 @@
+.alert {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+.progress {
+    border-radius: 10px 10px 0 0 !important;
+    height: 10px;
+}
+

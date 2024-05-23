@@ -1,0 +1,80 @@
+<div class="bg-activities w-100">
+    <div class="container mb-5">
+        <div class="row d-flex pt-5 justify-content-center">
+            <div class="col-4"></div>
+            <div class="title text-center col-4 mt-5">
+                <h1 class="text-white fw-bolder mb-2">Activiteiten</h1>
+                <p class="text-white">Klik op een activiteit om hem te selecteren</p>
+            </div>
+
+            <div class="instructions col-4 mt-5 mb-3">
+                <div class="single-instruction row text-center align-items-center justify-content-center mb-3">
+                    <div class="icon-bg col-3 p-0">
+                        <i class="non-chosen-activity-icon fa-solid fa-dumbbell text-white p-2 extra-round fs-5"></i>
+                    </div>
+                    <h5 class="text-white col-4 m-0 p-0 text-start fw-normal">Spierkracht</h5>
+                </div>
+
+                <div class="single-instruction row text-center align-items-center justify-content-center mb-3">
+                    <div class="icon-bg col-3 p-0">
+                        <i class="non-chosen-activity-icon fa-solid fa-bone text-white p-2 extra-round fs-5"></i>
+                    </div>
+                    <h5 class="text-white col-4 m-0 p-0 text-start fw-normal">Bot</h5>
+                </div>
+
+                <div class="single-instruction row text-center align-items-center justify-content-center mb-3">
+                    <div class="icon-bg col-3 p-0">
+                        <i class="non-chosen-activity-icon fa-solid fa-scale-balanced text-white p-2 extra-round fs-5"></i>
+                    </div>
+                    <h5 class="text-white col-4 m-0 p-0 text-start fw-normal">Balans</h5>
+                </div>
+            </div>
+
+            <div class="activities col-6 d-flex flex-column px-5 pb-4">
+
+            </div>
+
+            <div class="alert-div d-flex align-items-center justify-content-center d-none">
+                <div class="activities-alert alert alert-danger m-0 mt-4 text-center align-items-center" role="alert">
+                    U heeft nog geen activiteiten gekozen! Kies minstens 1 activiteit om verder te gaan.
+                </div>
+            </div>
+
+
+            <div class="button-div d-flex align-items-center justify-content-center my-5">
+                <button class="btn btn-primary">Activiteiten Opslaan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Templates -->
+<template id="activity-template">
+    <div class="activity extra-round row card-body bg-white shadow align-items-center justify-content-center px-4 mt-4">
+        <h4 class="m-0 p-0 fw-bold col"></h4>
+        <div class="icons-container p-0 col text-end"></div>
+    </div>
+</template>
+
+<template id="icon-template">
+    <i class="non-chosen-activity-icon fa-solid p-2 extra-round fs-5 ms-2"></i>
+</template>
+
+<!-- Confirmation modal -->
+<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmation-modal-label">Activiteiten Opslaan</h5>
+                <button type="button" class="btn-close close-confirmation-modal" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary close-confirmation-modal" data-dismiss="modal">Terug</button>
+                <button id="confirmation-modal-save" type="button" class="btn btn-primary">Opslaan</button>
+            </div>
+        </div>
+    </div>
+</div>

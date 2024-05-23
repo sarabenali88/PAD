@@ -1,0 +1,80 @@
+<div class="calendar-content p-3 align-items-center justify-content-center">
+    <div class="calendar-content-container d-flex justify-content-between h-100">
+        <div class="calendar-sidebar rounded p-3 overflow-auto">
+            <h2 class="calendar-title fw-bolder m-0 pb-2 mb-3 on-surface">Agenda</h2>
+            <h5 class="fw-normal m-0 on-surface mb-3">Evenementen</h5>
+
+            <!-- Events are added here -->
+
+        </div>
+        <div class="calendar-container ms-3 p-3 rounded">
+            <div id="calendar">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Templates -->
+<template id="event-template">
+    <div class="event surface-container-highest extra-round p-3 mb-2">
+        <p class="event-title m-0 on-surface"></p>
+        <p class="event-date m-0 on-surface-variant"></p>
+    </div>
+</template>
+
+<template id="select-option-template">
+    <option value=""></option>
+</template>
+
+<!-- Modals -->
+<div id="new-event-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header surface-container">
+                <h5 class="modal-title on-surface" id="confirmation-modal-label">Evenement Aanmaken</h5>
+                <i class="fa-solid fa-xmark fs-4 p-2 text-primary modal-close-btn text-center"></i>
+            </div>
+            <div class="modal-body">
+                <label for="new-event-title" class="mb-1 on-surface-variant">Titel</label>
+                <select class="form-select event-title-select">
+                    <option selected>Mijn Activiteiten</option>
+                </select>
+                <div class="my-3 d-none custom-title-div">
+                    <input class="form-control" id="new-event-title" placeholder="Titel toevoegen">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary modal-close-btn" data-dismiss="modal">Terug</button>
+                <button id="new-event-save" type="button" class="btn btn-primary">Opslaan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit-event-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header surface-container">
+                <h5 class="modal-title on-surface" id="event-modal-label">Evenement Bewerken</h5>
+                <div class="modal-close-btn-container d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-trash fs-5 p-2 text-primary text-center" style="height: 40px"></i>
+                    <i class="fa-solid fa-xmark fs-4 p-2 text-primary modal-close-btn text-center"></i>
+                </div>
+            </div>
+            <div class="modal-body">
+                <label for="new-event-title" class="mb-1 on-surface-variant">Titel</label>
+                <select class="form-select edit-event-title-select">
+                    <option selected>Mijn Activiteiten</option>
+                </select>
+                <div class="my-3 d-none edit-custom-title-div">
+                    <input class="form-control" id="edit-event-title" placeholder="Titel toevoegen">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary modal-close-btn" data-dismiss="modal">Terug</button>
+                <button id="edit-event-save" type="button" class="btn btn-primary">Opslaan</button>
+            </div>
+        </div>
+    </div>
+</div>

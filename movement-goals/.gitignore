@@ -1,0 +1,10 @@
+.idea/
+node_modules
+package-lock.json
+.DS_Store
+<<<<<<< HEAD
+server/cypress/fixtures
+server/cypress/support
+=======
+.idea
+>>>>>>> main
